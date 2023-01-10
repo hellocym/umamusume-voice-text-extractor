@@ -9,6 +9,13 @@
 # Usage
 
 - Required Environment: `Python 3.8+`、`.Net 6.0`
+```
+! wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
+! dpkg -i packages-microsoft-prod.deb
+! apt-get install apt-transport-https
+! apt-get update
+! apt-get install aspnetcore-runtime-6.0
+```
 - Install python package: `pip install -r requirements.txt`
 
 ```
