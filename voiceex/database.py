@@ -8,7 +8,7 @@ class UmaDatabase(downloader.UmaDownloader):
         super().__init__()
 
         profile_path = os.environ.get("UserProfile")
-        self.base_path = f"{profile_path}/AppData/LocalLow/Cygames/umamusume"
+        self.base_path = f"/content/database/"
         self.meta_conn = sqlite3.connect(f"{self.base_path}/meta")
         self.master_conn = sqlite3.connect(f"{self.base_path}/master/master.mdb")
 
